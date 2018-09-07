@@ -33,8 +33,12 @@ module.exports = {
                                                 content: [
                                                     {
                                                         block: 'text',
-                                                        mods: {view: 'secondary', size:'xxxl'},
-                                                        content:'yeeeeap'
+                                                        mods: {view: 'primary', size:'xxxxl', weight:'bold'},
+                                                        mix: {
+                                                            block: 'theme',
+                                                            mods: { color: 'nm-default' }
+                                                         },
+                                                        content:'Card title'
                                                     }
                                                 ]
                                             }
