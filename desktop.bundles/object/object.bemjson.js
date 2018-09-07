@@ -10,47 +10,45 @@ module.exports = {
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
 	scripts: [{ elem: 'js', url: 'object.min.js' }],
-	mods: { theme: 'islands' },
-	mix: [
-		{
+	mix: {
 			block: 'theme',
-			mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'medium', menu: 'default', font: 'ibm' }
+			mods: { color: 'nm-default',
+                    space: 'default',
+                    size: 'default',
+                    gap: 'medium',
+                    menu: 'default',
+                    font: 'museo' }
 		},
-		{
-			block: 'component',
-			mods: { islands: 'default' }
-		}
-	],
-    content: [
-        {
-            block: 'pt-card',
-            mods: { view: 'default', border: 'all', shadow: 'cloud' },
             content: [
-                {
-                    elem: 'content',
-                    mods: {'space-a': 'l'},
-                    content: [
                         {
-                        elem: 'block',
-                        content: [
-                            {
-                            block: 'text',
-                            mods: {view: 'secondary', size:'xxxl'},
-                            content:'yeeeeap'
-                        }
-                        ]
-                    }
-                    ]
-                },
-                {
-                    elem: 'image',
-                    mods: { 'shadow': 'top'},
-                    content: {
-                        tag: 'img',
-                        attrs: {
-                            src: 'https://bemdesign.github.io/bem-design/assets/i/london.png'
-                        }
-                    }
+                            block: 'pt-card',
+                            mods: { view: 'default', border: 'all', shadow: 'cloud' },
+                            content: [
+                                    {
+                                        elem: 'content',
+                                        mods: {'space-a': 'l'},
+                                        content: [
+                                            {
+                                                elem: 'block',
+                                                content: [
+                                                    {
+                                                        block: 'text',
+                                                        mods: {view: 'secondary', size:'xxxl'},
+                                                        content:'yeeeeap'
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'image',
+                                        mods: { 'shadow': 'top'},
+                                        content: {
+                                            tag: 'img',
+                                            attrs: {
+                                                src: 'https://bemdesign.github.io/bem-design/assets/i/london.png'
+                                                    }
+                                    }
                 },
                 {
                     elem: 'content',
