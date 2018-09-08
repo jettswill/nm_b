@@ -667,9 +667,9 @@ module.exports = {
 											content: [
 												{
 													block: 'payment',
-													mix: [ 
+													mix: [
 														{ block: 'decorator', mods: { 'space-a': 'xl' } },
-														{ block: 'pt-list', mods: { 'view': 'default' } }, 
+														{ block: 'pt-list', mods: { 'view': 'default' } },
 													],
 													attrs: { style: 'height: 456px; overflow: hidden;'},
 													content: [
@@ -4666,6 +4666,6 @@ module.exports = {
 
 			]
 		}
-		
+
 	]
 };

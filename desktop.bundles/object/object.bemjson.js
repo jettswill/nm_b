@@ -10,9 +10,10 @@ module.exports = {
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
 	scripts: [{ elem: 'js', url: 'object.min.js' }],
+    mods: { theme: 'islands' },
 	mix: {
 			block: 'theme',
-			mods: { color: 'nm-default',
+			mods: { color: 'whitepaper-default',
                     space: 'default',
                     size: 'default',
                     gap: 'medium',
@@ -22,79 +23,115 @@ module.exports = {
             content: [
                         {
                             block: 'pt-card',
-                            mods: { view: 'default', border: 'all', shadow: 'cloud' },
+                            mods: { view: 'default' },
                             content: [
-                                    {
-                                        elem: 'content',
-                                        mods: {'space-a': 'l'},
-                                        content: [
+                                {
+                                elem: 'header',
+                                elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' },
+                                content: [
                                             {
-                                                elem: 'block',
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mods: {view: 'primary', size:'xxxxl', weight:'bold'},
-                                                        mix: {
-                                                            block: 'theme',
-                                                            mods: { color: 'nm-default' }
-                                                         },
-                                                        content:'Card title'
-                                                    }
-                                                ]
+                                            block: 'pt-icon-plus',
+                                            mods: { distribute: 'between','vertical-align': 'center' },
+                                            content: [
+                                                            {
+                                                                elem: 'block',
+                                                                mix: { block: 'text', mods: { size: 'm', view: 'primary', weight: 'bold' } },
+                                                                content: 'Информация о клиенте'
+                                                            },
+                                                            {
+                                                            elem: 'icon',
+                                                            elemMods: { 'indent-r': 'xs' },
+                                                            content: {
+                                                                block: 'icon',
+                                                                mods: { name: 'add-1', size: 's', view: 'secondary' }
+                                                                    }
+                                                            }]
                                             }
                                         ]
-                                    },
+                                },
+                                {
+                                elem: 'content',
+                                elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' },
+                                content: [
                                     {
-                                        elem: 'image',
-                                        mods: { 'shadow': 'top'},
-                                        content: {
-                                            tag: 'img',
-                                            attrs: {
-                                                src: 'https://bemdesign.github.io/bem-design/assets/i/london.png'
-                                                    }
+                                    block: 'pt-list',
+                                    content: [
+                                                 {
+                                        elem: 'item',
+                                        elemMods: { 'space-h': 'xs', border: 'bottom' },
+                                        content: [
+                                            {
+                                                elem: 'item',
+                                                elemMods: { 'space-v': 'xs' },
+                                                content: {
+                                                    block: 'pt-icon-plus',
+                                                    mods: { 'vertical-align': 'center' },
+                                                    content: [
+                                                    {
+                                                        elem: 'icon',
+                                                        elemMods: { 'indent-r': 'xs' },
+                                                        content: {
+                                                            block: 'icon',
+                                                            mods: { name: 'user', size: 'm', view: 'secondary' }
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'block',
+                                                        mix: { block: 'text', mods: { size: 'm', view: 'primary' } },
+                                                        content: 'John Doe'
+                                                    }]
+                                                }
+                                            },
+                                            {
+                                                elem: 'item',
+                                                elemMods: { 'space-v': 'xs' },
+                                                content: {
+                                                    block: 'pt-icon-plus',
+                                                    mods: { 'vertical-align': 'center' },
+                                                    content: [
+                                                    {
+                                                        elem: 'icon',
+                                                        elemMods: { 'indent-r': 'xs' },
+                                                        content: {
+                                                            block: 'icon',
+                                                            mods: { name: 'phone-1', size: 'm', view: 'secondary' }
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'block',
+                                                        mix: { block: 'text', mods: { size: 'm', view: 'primary' } },
+                                                        content: '+7 012 345-67-89'
+                                                    }]
+                                                }
+                                            },
+                                            {
+                                                elem: 'item',
+                                                elemMods: { 'space-v': 'xs' },
+                                                content: {
+                                                    block: 'pt-icon-plus',
+                                                    mods: { 'vertical-align': 'center' },
+                                                    content: [
+                                                    {
+                                                        elem: 'icon',
+                                                        elemMods: { 'indent-r': 'xs' },
+                                                        content: {
+                                                            block: 'icon',
+                                                            mods: { name: 'mail-1', size: 'm', view: 'secondary' }
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'block',
+                                                        mix: { block: 'text', mods: { size: 'm', view: 'primary' } },
+                                                        content: 'user@mail.com'
+                                                    }]
+                                            }
+                                        }]
                                     }
-                },
-                {
-                    elem: 'content',
-                    mods: { 'align' : 'center'},
-                    content: [
-                        {
-                            block: 'pt-icon-plus',
-                            mods: { 'align': 'center'},
-                            mix: { block:'decorator', mods: {'intent-b': 'xxxl' } },
-                            content: [
-                                {
-                                    elem: 'icon',
-                                    elemMods: {'intent-r': 'xs'},
-                                    content: [
-                                        {
-                                            block: 'icon',
-                                            mods: { name: 'time', size: 'm'}
-                                        },
-                                {
-                                    elem: 'block',
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: { size: 'xxl', view: 'secondary'},
-                                            content: 'Back in the days'
-                                        }
-                                    ]
-
-
-                                        }
-                                    ]
+                                             ]
+                                         }
+                                        ]
                                 }
                             ]
                         }
-                    ]
-                },
-                {
-                    elem: 'content'
-                },
-                {
-                    elem: 'footer'
-                }]
-            }
-        ]
+            	]
 };
