@@ -8,9 +8,9 @@ module.exports = {
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
 		{ elem: 'css', url: 'object.min.css' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
-	],
+		  ],
 	scripts: [{ elem: 'js', url: 'object.min.js' }],
-    mods: { theme: 'islands' },
+    mods: { theme: 'nm' },
 	mix: {
 			block: 'theme',
 			mods: { color: 'whitepaper-default',
@@ -18,24 +18,25 @@ module.exports = {
                     size: 'default',
                     gap: 'medium',
                     menu: 'default',
-                    font: 'museo' }
+                    font: 'museo'
+				  }
 		},
             content: [
                         {
                             block: 'pt-card',
-                            mods: { view: 'default' },
+                            mods: { shadow: 'cloud', view: 'default' },
                             content: [
                                 {
-                                elem: 'header',
-                                elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' },
+                                elem: 'content',
+                                elemMods: { 'space-h': 'l', 'space-v': 'm'},
                                 content: [
                                             {
                                             block: 'pt-icon-plus',
-                                            mods: { distribute: 'between','vertical-align': 'center' },
+                                            mods: { 'vertical-align': 'center', 'distribute': 'between' },
                                             content: [
                                                             {
                                                                 elem: 'block',
-                                                                mix: { block: 'text', mods: { size: 'm', view: 'primary', weight: 'bold' } },
+                                                                mix: { block: 'text', mods: { size: 'm', view: 'brand', weight: 'bold' } },
                                                                 content: 'Информация о клиенте'
                                                             },
                                                             {
@@ -43,26 +44,25 @@ module.exports = {
                                                             elemMods: { 'indent-r': 'xs' },
                                                             content: {
                                                                 block: 'icon',
-                                                                mods: { name: 'add-1', size: 's', view: 'secondary' }
+                                                                mods: { name: 'edit', size: 's', view: 'secondary' }
                                                                     }
-                                                            }]
+                                                            }
+													]
                                             }
                                         ]
                                 },
                                 {
                                 elem: 'content',
-                                elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' },
+                                elemMods: { 'space-h': 'l', 'space-t': 'xs', 'space-b': 'xs'},
                                 content: [
                                     {
                                     block: 'pt-list',
                                     content: [
                                                  {
                                         elem: 'item',
-                                        elemMods: { 'space-h': 'xs', border: 'bottom' },
                                         content: [
                                             {
                                                 elem: 'item',
-                                                elemMods: { 'space-v': 'xs' },
                                                 content: {
                                                     block: 'pt-icon-plus',
                                                     mods: { 'vertical-align': 'center' },
@@ -72,7 +72,7 @@ module.exports = {
                                                         elemMods: { 'indent-r': 'xs' },
                                                         content: {
                                                             block: 'icon',
-                                                            mods: { name: 'user', size: 'm', view: 'secondary' }
+                                                            mods: { name: 'human', size: 'm', view: 'secondary' }
                                                         }
                                                     },
                                                     {
@@ -84,7 +84,6 @@ module.exports = {
                                             },
                                             {
                                                 elem: 'item',
-                                                elemMods: { 'space-v': 'xs' },
                                                 content: {
                                                     block: 'pt-icon-plus',
                                                     mods: { 'vertical-align': 'center' },
@@ -94,7 +93,7 @@ module.exports = {
                                                         elemMods: { 'indent-r': 'xs' },
                                                         content: {
                                                             block: 'icon',
-                                                            mods: { name: 'phone-1', size: 'm', view: 'secondary' }
+                                                            mods: { name: 'phone', size: 'm', view: 'secondary' }
                                                         }
                                                     },
                                                     {
@@ -116,7 +115,7 @@ module.exports = {
                                                         elemMods: { 'indent-r': 'xs' },
                                                         content: {
                                                             block: 'icon',
-                                                            mods: { name: 'mail-1', size: 'm', view: 'secondary' }
+                                                            mods: { name: 'mail', size: 'm', view: 'secondary' }
                                                         }
                                                     },
                                                     {
@@ -133,5 +132,5 @@ module.exports = {
                                 }
                             ]
                         }
-            	]
-};
+            		 ]
+			 };
