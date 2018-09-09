@@ -33,9 +33,9 @@ $color-bg-link: color($color-base-path h(-10%) s(-10) l(+9) a(40%)); /* Цвет
 $color-typo-brand: $color-base-project; /* Цвет брендового текста */
 $color-typo-primary: $color-base-base; /* Цвет основного текста */
 $color-typo-promo: color($color-base-base a(80%)); /* Цвет промо текста */
-$color-typo-secondary: color($color-base-base a(60%)); /* Цвет второстепенного текста */
-$color-typo-ghost: color($color-base-base a(30%)); /* Цвет дополнительного текста */
-$color-typo-disable: color($color-base-base a(30%)); /* Цвет неактивного текста */
+$color-typo-secondary: color($color-base-base a(64%)); /* Цвет второстепенного текста */
+$color-typo-ghost: color($color-base-base a(40%)); /* Цвет дополнительного текста */
+$color-typo-disable: color($color-base-base a(24%)); /* Цвет неактивного текста */
 $color-typo-success: $color-base-success; /* Цвет текста успеха */
 $color-typo-warning: $color-base-warning; /* Цвет текста предупреждения */
 $color-typo-alert: $color-base-alert; /* Цвет текста ошибки */
@@ -47,7 +47,7 @@ $color-link-minor: color($color-base-path h(+22) s(-80%) l(+13%)); /* Цвет �
 $color-link-hover: color($color-base-path l(-7%)); /* Цвет ховера ссылки */
 
 
-.theme_color_whitepaper-default {
+.theme_color_nm-portal {
 
 	/* Цвета блоков */
 	--color-bg-brand: $color-bg-brand; /* Цвет фона брендированый */
