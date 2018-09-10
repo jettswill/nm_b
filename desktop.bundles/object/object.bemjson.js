@@ -10,7 +10,7 @@ module.exports = {
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 		  ],
 	scripts: [{ elem: 'js', url: 'object.min.js' }],
-    mods: { theme: 'nm-portal' },
+  mods: { theme: 'nm-portal' },
 	mix: {
 			block: 'theme',
 			mods: { color: 'nm-portal',
@@ -24,11 +24,11 @@ module.exports = {
             content: [
                         {
                             block: 'pt-card-block',
-                            mods: { shadow: 'card', view: 'default', 'border-radius':'xxs' },
+                            mods: { shadow: 'card', view: 'default', 'border-radius':'xxs', 'width': '300' },
                             content: [
                                         {
                                             elem: 'header',
-                                            elemMods: { height: 'm', distribute: 'between', border:'b', 'space-h':'l' },
+                                            elemMods: { height: 'm', distribute: 'between', border:'b', 'space-h':'m' },
                                             content: [
                                                                         {
                                                                             elem: 'block',
@@ -47,7 +47,7 @@ module.exports = {
                                         },
                                         {
                                         elem: 'content',
-                                        elemMods: { 'space-h': 'l', 'space-t': 's', 'space-b': 'm'},
+                                        elemMods: { 'space-h': 'm', 'space-t': 's', 'space-b': 'm'},
                                         content: [
                                             {
                                             block: 'pt-list',
