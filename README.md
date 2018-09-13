@@ -1,14 +1,14 @@
-# WHITEPAPER STUB
+# NM
 
-Whitepaper-stub – шаблон проекта на БЭМ-стеке. Вкчючает в себя минимальную конфигурацию для старта работы.
+nm_b – шаблон проекта на БЭМ-стеке. 
 
 ## Установка
 
 В командной строке необходимо выполнить следующие команды
 
 ```
-git clone https://github.com/whitepapertools/whitepaper-stub.git --depth 1 my-whitepaper-project
-cd my-whitepaper-project
+git clone https://github.com/jettswill/nm_b.git --depth 1 nm_b
+cd nm_b
 npm install
 ```
 
@@ -30,6 +30,3 @@ npm install
 
 Далее нужно в браузере перейти по ссылке `0.0.0.0:8080/`. На ней будет список всей страниц в проекте. Изначально в проекте лежит одна строка с примерами блоков.
 
-## Как работать дальше?
-
-О том, как тут работать написано в нашем (обучении)[http://whitepaper.tools/doc.html]
