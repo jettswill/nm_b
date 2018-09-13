@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/whitepapertools/whitepaper-stub.git"
+    "url": "https://github.com/jettswill/nm_b.git"
   },
   "engines": {
     "node": ">=4"
