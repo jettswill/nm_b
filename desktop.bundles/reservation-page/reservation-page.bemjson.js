@@ -16,7 +16,7 @@ module.exports = {
 			mods: { color: 'nm-portal',
                     space: 'default',
                     size: 'default',
-                    gap: 'medium',
+                    gap: 'small',
                     menu: 'default',
                     font: 'tahoma'
 				  }
@@ -24,31 +24,74 @@ module.exports = {
   content: [
             {
         			block: 'tpl-layout',
-        			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' } },
+        			mix: { block: 'decorator', mods: { 'space-v': 'xl' } },
         			attrs: {
         				'style': 'background: rgba(0,0,0,0.04);'
                     },
                     content: [
+
+                        /* Левая колонка */
                         {
-                        elem: 'container',
-                        elemMods: { align: 'center' },
-                        attrs: {
-                            'style': 'width: 988px;'
-                        },
-                        content: [
-                            {
-                            block: 'tpl-grid',
-                            mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
+                            elem: 'section',
                             content: [
                                 {
-                                    block: 'text',
-                                    content: 'ttt'
-                                    }
+                                    elem: 'container',
+                                    elemMods: {align: 'center'},
+                                    attrs: {
+                                        'style': 'width: 1008px'
+                                    },
+                                    content: [
+                                        {
+                                            block: 'tpl-grid',
+                                            mods: {columns: '12', 'col-gap':'half', 'row-gap':'full'},
+                                            content: [
+                                                {
+                                                    elem: 'fraction',
+                                                    elemMods: { col: '4'},
+                                                    content: [
+                                                        {
+                                                            block: 'stepper',
+                                                            content: [
+                                                                {
+                                                                    elem: 'header',
+                                                                    content: [
+                                                                        {
+                                                                            block: 'pt-icon-plus',
+                                                                            mods: { 'vertical-align': 'center' },
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'block',
+                                                                                    content: [
+                                                                                        {
+                                                                                            block: 'text',
+                                                                                            content: 'Этапы сделки'
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    elem: 'icon',
+                                                                                    content: {
+                                                                                        block: 'icon',
+                                                                                        mods: { name: 'edit', size: 's', view: 'primary'}
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             ]
-                            }
-                        ]
                         }
-                    ]
+                        /* Левая колонка */
+
+                        ]
             }
   ]
 };
